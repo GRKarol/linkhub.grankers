@@ -19,7 +19,7 @@ const translations = {
       community: "Community Mgmt"
     },
     links: {
-      skoolTitle: "Dołącz do Grankers Team na Skool",
+      skoolTitle: "Dołącz do Grankers na Skool",
       skoolSub: "Elitarna społeczność i wiedza",
       ytTitle: "Kanał YouTube Grankers Team",
       ytSub: "Wiedza Premium za darmo",
@@ -48,7 +48,7 @@ const translations = {
     links: {
       skoolTitle: "Join Grankers Team on Skool",
       skoolSub: "Elite community and knowledge",
-      ytTitle: "Grankers Team YouTube Channel",
+      ytTitle: "Grankers Team YouTube",
       ytSub: "Premium knowledge for free",
       igTitle: "Grankers Team Instagram",
       igSub: "Lifestyle & Backstage",
