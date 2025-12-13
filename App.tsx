@@ -4,7 +4,9 @@ import { LinkItem, Language } from './types';
 import { LinkCard } from './components/LinkCard';
 import { ContactForm } from './components/ContactForm';
 
-const LOGO_URL = "channel_logo.png"; 
+// Zmiana: Logo wczytywane z lokalnego pliku.
+// Upewnij się, że plik "channel_logo.png" znajduje się w głównym folderze (public lub root).
+const LOGO_URL = "./channel_logo.png"; 
 
 // Translations dictionary
 const translations = {
@@ -62,7 +64,8 @@ const translations = {
 
 const App: React.FC = () => {
   const [showContact, setShowContact] = useState(false);
-  const [lang, setLang] = useState<Language>('pl');
+  // Zmiana: Domyślny język ustawiony na 'en' (angielski)
+  const [lang, setLang] = useState<Language>('en');
 
   const t = translations[lang];
 
