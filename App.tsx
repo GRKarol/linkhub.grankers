@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Users, Youtube, Briefcase, Mail, Globe, Gauge, TrendingUp, Plane, UserCheck } from 'lucide-react';
+import { Users, Youtube, Briefcase, Mail, Globe, Gauge, TrendingUp, Plane, UserCheck, Instagram } from 'lucide-react';
 import { LinkItem, Language } from './types';
 import { LinkCard } from './components/LinkCard';
 import { ContactForm } from './components/ContactForm';
 
-// Zmiana: Używamy prostej ścieżki tekstowej. 
-// Dzięki temu build nie "wywali się", jeśli pliku brakuje w momencie kompilacji.
+// Zmiana: Aktualizacja URL do logo zgodnie z prośbą
 const LOGO_URL = "https://landingpage.progressio.giize.com/logo.png";
 
 // Translations dictionary
@@ -24,6 +23,8 @@ const translations = {
       skoolSub: "Elitarna społeczność i wiedza",
       ytTitle: "Kanał YouTube Grankers Team",
       ytSub: "Wiedza Premium za darmo",
+      igTitle: "Instagram Grankers Team",
+      igSub: "Lifestyle & Backstage",
       portfolioTitle: "Portfolio - Web Dev & Montaż",
       portfolioSub: "Nasze realizacje",
       progressioTitle: "Progressio",
@@ -49,6 +50,8 @@ const translations = {
       skoolSub: "Elite community and knowledge",
       ytTitle: "Grankers Team YouTube Channel",
       ytSub: "Premium knowledge for free",
+      igTitle: "Grankers Team Instagram",
+      igSub: "Lifestyle & Backstage",
       portfolioTitle: "Portfolio - Web Dev & Editing",
       portfolioSub: "Our work",
       progressioTitle: "Progressio",
@@ -84,6 +87,13 @@ const App: React.FC = () => {
       subtext: t.links.ytSub,
       url: 'https://www.youtube.com/@GrankersTeam', 
       icon: Youtube
+    },
+    {
+      id: 'instagram',
+      title: t.links.igTitle,
+      subtext: t.links.igSub,
+      url: 'https://www.instagram.com/grankersteam?igsh=ejJ2dnRya2ZqcTJ3',
+      icon: Instagram
     },
     {
       id: 'portfolio',
