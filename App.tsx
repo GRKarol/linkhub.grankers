@@ -6,7 +6,7 @@ import { ContactForm } from './components/ContactForm';
 
 // Zmiana: Używamy prostej ścieżki tekstowej. 
 // Dzięki temu build nie "wywali się", jeśli pliku brakuje w momencie kompilacji.
-const LOGO_URL = "./channel_logo.png";
+const LOGO_URL = "https://landingpage.progressio.giize.com/logo.png";
 
 // Translations dictionary
 const translations = {
