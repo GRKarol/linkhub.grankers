@@ -4,9 +4,9 @@ import { LinkItem, Language } from './types';
 import { LinkCard } from './components/LinkCard';
 import { ContactForm } from './components/ContactForm';
 
-// Zmiana: Logo wczytywane z lokalnego pliku.
-// Upewnij się, że plik "channel_logo.png" znajduje się w głównym folderze (public lub root).
-const LOGO_URL = "./channel_logo.png"; 
+// Zmiana: Używamy prostej ścieżki tekstowej. 
+// Dzięki temu build nie "wywali się", jeśli pliku brakuje w momencie kompilacji.
+const LOGO_URL = "./channel_logo.png";
 
 // Translations dictionary
 const translations = {
@@ -64,7 +64,7 @@ const translations = {
 
 const App: React.FC = () => {
   const [showContact, setShowContact] = useState(false);
-  // Zmiana: Domyślny język ustawiony na 'en' (angielski)
+  // Domyślny język ustawiony na 'en' (angielski)
   const [lang, setLang] = useState<Language>('en');
 
   const t = translations[lang];
@@ -153,6 +153,11 @@ const App: React.FC = () => {
                <img 
                  src={LOGO_URL} 
                  alt="Grankers Team Logo" 
+                 onError={(e) => {
+                   // Fallback - jeśli nie ma pliku, pokaż awatar
+                   e.currentTarget.src = "https://ui-avatars.com/api/?name=Grankers+Team&background=B38728&color=ffffff&size=256&font-size=0.35&bold=true";
+                   e.currentTarget.onerror = null; 
+                 }}
                  className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.3)] filter brightness-110 contrast-125 hover:scale-105 transition-transform duration-500"
                />
             </div>
