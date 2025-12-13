@@ -25,12 +25,12 @@ const translations = {
       ytSub: "Wiedza Premium za darmo",
       igTitle: "Instagram Grankers Team",
       igSub: "Lifestyle & Backstage",
-      portfolioTitle: "Portfolio - Web Dev & Montaż",
-      portfolioSub: "Nasze realizacje",
       progressioTitle: "Progressio",
       progressioSub: "Dziennik rozwoju osobistego",
       successTitle: "Successometer",
       successSub: "Zmierz swój sukces",
+       portfolioTitle: "Portfolio - Web Dev & Montaż",
+      portfolioSub: "Nasze realizacje",
       contactTitle: "Kontakt / Współpraca",
       contactSub: "Rozpocznijmy projekt"
     },
@@ -52,12 +52,12 @@ const translations = {
       ytSub: "Premium knowledge for free",
       igTitle: "Grankers Team Instagram",
       igSub: "Lifestyle & Backstage",
-      portfolioTitle: "Portfolio - Web Dev & Editing",
-      portfolioSub: "Our work",
       progressioTitle: "Progressio",
       progressioSub: "Self-improvement journal",
       successTitle: "Successometer",
       successSub: "Measure your success",
+       portfolioTitle: "Portfolio - Web Dev & Editing",
+      portfolioSub: "Our work",
       contactTitle: "Contact / Collaboration",
       contactSub: "Let's start a project"
     },
@@ -96,13 +96,6 @@ const App: React.FC = () => {
       icon: Instagram
     },
     {
-      id: 'portfolio',
-      title: t.links.portfolioTitle,
-      subtext: t.links.portfolioSub,
-      url: 'https://portfolio.com', // Placeholder kept as requested
-      icon: Briefcase
-    },
-    {
       id: 'progressio',
       title: t.links.progressioTitle,
       subtext: t.links.progressioSub,
@@ -115,6 +108,13 @@ const App: React.FC = () => {
       subtext: t.links.successSub,
       url: 'https://www.successometer.giize.com', 
       icon: Gauge
+    },
+      {
+      id: 'portfolio',
+      title: t.links.portfolioTitle,
+      subtext: t.links.portfolioSub,
+      url: 'https://portfolio.com', // Placeholder kept as requested
+      icon: Briefcase
     },
     {
       id: 'contact',
