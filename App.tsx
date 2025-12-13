@@ -4,7 +4,7 @@ import { LinkItem, Language } from './types';
 import { LinkCard } from './components/LinkCard';
 import { ContactForm } from './components/ContactForm';
 
-const LOGO_URL = "channel_logo.png"; 
+const LOGO_URL = "https://i.imgur.com/u7w3S0U.png"; 
 
 // Translations dictionary
 const translations = {
