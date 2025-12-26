@@ -113,7 +113,7 @@ const App: React.FC = () => {
       id: 'portfolio',
       title: t.links.portfolioTitle,
       subtext: t.links.portfolioSub,
-      url: 'https://portfolio.com', // Placeholder kept as requested
+      url: 'https://www.grportfolio.giize.com/', // Placeholder kept as requested
       icon: Briefcase
     },
     {
