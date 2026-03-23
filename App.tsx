@@ -77,16 +77,23 @@ const App: React.FC = () => {
       id: 'skool',
       title: t.links.skoolTitle,
       subtext: t.links.skoolSub,
-      url: 'https://www.skool.com/grankers-team-2368', 
+      url: 'https://www.skool.com/grankers-team-2368',
       icon: Users,
       special: true
     },
     {
-      id: 'youtube',
-      title: t.links.ytTitle,
-      subtext: t.links.ytSub,
-      url: 'https://www.youtube.com/@GrankersTeam', 
-      icon: Youtube
+      id: 'progressio',
+      title: t.links.progressioTitle,
+      subtext: t.links.progressioSub,
+      url: 'https://landingpage.progressio.giize.com',
+      icon: TrendingUp
+    },
+    {
+      id: 'successometer',
+      title: t.links.successTitle,
+      subtext: t.links.successSub,
+      url: 'https://www.successometer.giize.com',
+      icon: Gauge
     },
     {
       id: 'instagram',
@@ -96,20 +103,13 @@ const App: React.FC = () => {
       icon: Instagram
     },
     {
-      id: 'progressio',
-      title: t.links.progressioTitle,
-      subtext: t.links.progressioSub,
-      url: 'https://landingpage.progressio.giize.com', 
-      icon: TrendingUp
+      id: 'youtube',
+      title: t.links.ytTitle,
+      subtext: t.links.ytSub,
+      url: 'https://www.youtube.com/@GrankersTeam',
+      icon: Youtube
     },
     {
-      id: 'successometer',
-      title: t.links.successTitle,
-      subtext: t.links.successSub,
-      url: 'https://www.successometer.giize.com', 
-      icon: Gauge
-    },
-      {
       id: 'portfolio',
       title: t.links.portfolioTitle,
       subtext: t.links.portfolioSub,
