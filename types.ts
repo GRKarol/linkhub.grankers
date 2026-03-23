@@ -10,6 +10,7 @@ export interface LinkItem {
   subtext?: string;
   action?: () => void; // For internal actions like opening contact form
   special?: boolean;
+  badge?: string;
 }
 
 export enum FormStatus {

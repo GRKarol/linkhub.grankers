@@ -29,6 +29,13 @@ export const LinkCard: React.FC<LinkCardProps> = ({ item }) => {
       {/* Golden Sheen Effect on Hover */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-500/10 to-transparent translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out" />
 
+      {/* Badge */}
+      {item.badge && (
+        <span className="absolute top-2 right-2 z-20 px-2 py-0.5 text-[9px] md:text-[10px] font-bold uppercase tracking-widest rounded-sm bg-amber-500/20 border border-amber-500/50 text-amber-400">
+          {item.badge}
+        </span>
+      )}
+
       <div className="flex items-center space-x-3 md:space-x-5 relative z-10">
         <div className={`
           p-2.5 md:p-3 rounded-md border border-yellow-500/20 flex-shrink-0
