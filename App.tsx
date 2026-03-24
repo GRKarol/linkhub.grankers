@@ -85,7 +85,7 @@ const App: React.FC = () => {
       id: 'progressio',
       title: t.links.progressioTitle,
       subtext: t.links.progressioSub,
-      url: 'https://landingpage.progressio.giize.com',
+      url: 'https://grprogressio.giize.com',
       icon: TrendingUp,
       badge: 'Pre-order'
     },
